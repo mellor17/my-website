@@ -36,6 +36,79 @@ body * {
   /*font-weight: ;*/
 }
 
+body {
+    background-color: var(--mainColour);
+    min-height: 100vh;
+}
+
+.main-container-post {
+    /* REMEMBER YOU TOOL!!!! This overrides the global variable, but ONLY for things inside this box */
+    --previewBackground: #e6ecf8;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: var(--s2Colour);
+    color: var(--mainText);
+
+    border: 2px solid var(--borderColour);
+    border-radius: 5px;
+
+    /* Your signature retro shadow */
+    -webkit-box-shadow: 10px 10px 0px 0px var(--previewShadow);
+    -moz-box-shadow: 10px 10px 0px 0px var(--previewShadow);
+    box-shadow: 10px 10px 0px 0px var(--previewShadow);
+}
+
+/* 3. Typography (Keeping your fonts) */
+.main-container-post h1,
+.main-container-post h2,
+.main-container-post h3 {
+    font-family: 'Raster', sans-serif;
+    color: var(--mainText);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.main-container-post p,
+.main-container-post li {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--mainText);
+}
+
+.main-container-post a {
+    color: var(--anchorColour);
+}
+
+
+.main-container-post img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--borderColour);
+    display: block;
+    margin: 20px auto;
+}
+
+
+.main-container-post pre {
+
+    background-color: var(--previewBackground);
+
+    padding: 20px;
+    border: 2px solid var(--borderColour);
+    border-radius: 5px;
+    overflow-x: auto;  /*sets scroll bar if code is too long*/
+
+    color: #616269;
+}
+
+.main-container-post code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 /*SELECTORS*/
 h1,
 h2,
@@ -44,7 +117,7 @@ h4,
 h5,
 h6 {
   color: var(--mainText);
-  background-color: /*#0f1029*/ l;
+  /*background-color: !*#0f1029*! l;*/
   /*font-family: "Mundial Bold", sans-serif;*/
   font-family: Raster, serif;
 }
